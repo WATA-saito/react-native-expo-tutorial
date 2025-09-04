@@ -1,7 +1,7 @@
 // eslint.config.js
-import tseslint from "typescript-eslint";
-import eslintPlugin from "@eslint/js";
 import { FlatCompat } from "@eslint/eslintrc";
+import eslintPlugin from "@eslint/js";
+import tseslint from "typescript-eslint";
 
 const compat = new FlatCompat({
   baseDirectory: import.meta.dirname, // Node v20 以降
@@ -43,7 +43,10 @@ export default [
           fixStyle: "inline-type-imports",
         },
       ],
-      "@typescript-eslint/no-unused-vars": ["warn", { argsIgnorePattern: "^_" }],
+      "@typescript-eslint/no-unused-vars": [
+        "warn",
+        { argsIgnorePattern: "^_" },
+      ],
       "@typescript-eslint/require-await": "off",
       "@typescript-eslint/no-misused-promises": [
         "error",
