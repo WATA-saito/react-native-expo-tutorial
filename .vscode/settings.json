@@ -18,5 +18,6 @@
   "typescript.tsdk": "node_modules/typescript/lib",
   "[jsonc]": {
     "editor.defaultFormatter": "vscode.json-language-features"
-  }
+  },
+  "cSpell.words": ["Pressable"]
 }
